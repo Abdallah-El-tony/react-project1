@@ -1,11 +1,12 @@
 import React, {useState } from 'react'
+import { BoodData } from './BookData';
 export const Book = (probs) => {
   const [items, setItems] = useState(probs.data);
-  const [lists,setList] = useState(5)
+  const [lists,setList] = useState(BoodData.length)
 
     function delteItem() {
       setItems(prev => ({ ...prev, id: 0 }));
-     setList(prevLists => prevLists - 1);
+     setList(prevlenth => prevlenth - 1);
     }
     const {id,img, title, price} = items;
   return (

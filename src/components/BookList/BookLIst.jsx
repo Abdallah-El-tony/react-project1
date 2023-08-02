@@ -5,7 +5,7 @@ const BookLIst = () => {
     const [items,setItems] = useState(BoodData)
 
     function removeAll() {
-        setItems([])
+      setItems([])
     }
   return (
     <div className='w-100 rounded bg-dark p-4 mx-auto row'>
